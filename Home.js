@@ -9,17 +9,35 @@ export default function Home({ navigation }) {
       <Text>Home screen</Text>
       <Button
         title="First Item"
-        onPress={() => navigation.navigate("Details", { title: "First Item" })}
+        onPress={() =>
+          navigation.navigate("Details", {
+            title: "First Item",
+            content: "First Item Content",
+            stock: 1,
+          })
+        }
       />
 
       <Button
         title="Second Item"
-        onPress={() => navigation.navigate("Details", { title: "Second Item" })}
+        onPress={() =>
+          navigation.navigate("Details", {
+            title: "Second Item",
+            content: "Second Item Content",
+            stock: 0,
+          })
+        }
       />
 
       <Button
         title="Third Item"
-        onPress={() => navigation.navigate("Details", { title: "Third Item" })}
+        onPress={() =>
+          navigation.navigate("Details", {
+            title: "Third Item",
+            title: "Third Item Content",
+            content: 200,
+          })
+        }
       />
     </View>
   );
