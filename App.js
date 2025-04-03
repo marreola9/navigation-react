@@ -21,7 +21,7 @@ export default function App() {
         <Tab.Navigator>
           <Tab.Screen name="Planets" component={Planets} />
           <Tab.Screen name="Films" component={Films} />
-          <Tab.Screen name="Spaceship" component={SpaceshipsTab} />
+          <Tab.Screen name="Spaceships" component={SpaceshipsTab} />
         </Tab.Navigator>
       )}
 
@@ -29,7 +29,7 @@ export default function App() {
         <Drawer.Navigator>
           <Drawer.Screen name="Planets" component={Planets} />
           <Drawer.Screen name="Films" component={Films} />
-          <Drawer.Screen name="Spaceship" component={SpaceshipsTab} />
+          <Drawer.Screen name="Spaceships" component={SpaceshipsTab} />
         </Drawer.Navigator>
       )}
     </NavigationContainer>
