@@ -8,8 +8,18 @@ export default function Home({ navigation }) {
       <StatusBar barStayle={"dark-content"} />
       <Text>Home screen</Text>
       <Button
-        title="Settings"
-        onPress={() => navigation.navigate("Settings")}
+        title="First Item"
+        onPress={() => navigation.navigate("Details", { title: "First Item" })}
+      />
+
+      <Button
+        title="Second Item"
+        onPress={() => navigation.navigate("Details", { title: "Second Item" })}
+      />
+
+      <Button
+        title="Third Item"
+        onPress={() => navigation.navigate("Details", { title: "Third Item" })}
       />
     </View>
   );
