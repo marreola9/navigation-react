@@ -12,7 +12,7 @@ export default function Details({ route, navigation }) {
 
   React.useEffect(() => {
     navigation.setOptions({ title });
-  }, []);
+  });
   return (
     <View style={styles.container}>
       <StatusBar barStyle={"dark-content"} />

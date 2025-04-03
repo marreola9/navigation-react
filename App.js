@@ -1,10 +1,10 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Platform, Settings } from "react-native";
+import { Platform } from "react-native";
 import Home from "./Home";
 import News from "./News";
-import Settings from "./Settings";
+import SettingsTab from "./Settings";
 
 const Tab = createBottomTabNavigator();
 const Drawer = createDrawerNavigator();
@@ -21,7 +21,7 @@ export default function App() {
         <Tab.Navigator>
           <Tab.Screen name="Home" component={Home} />
           <Tab.Screen name="News" component={News} />
-          <Tab.Screen name="Settings" component={Settings} />
+          <Tab.Screen name="Settings" component={SettingsTab} />
         </Tab.Navigator>
       )}
 
@@ -29,7 +29,7 @@ export default function App() {
         <Drawer.Navigator>
           <Drawer.Screen name="Home" component={Home} />
           <Drawer.Screen name="News" component={News} />
-          <Drawer.Screen name="Settings" component={Settings} />
+          <Drawer.Screen name="Settings" component={SettingsTab} />
         </Drawer.Navigator>
       )}
     </NavigationContainer>
