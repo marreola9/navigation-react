@@ -34,8 +34,8 @@ export default function Home({ navigation }) {
         onPress={() =>
           navigation.navigate("Details", {
             title: "Third Item",
-            title: "Third Item Content",
-            content: 200,
+            content: "Third Item Content",
+            stock: 200,
           })
         }
       />
