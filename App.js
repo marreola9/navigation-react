@@ -1,10 +1,10 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/native-stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import Home from "./Home";
 import Settings from "./Settings";
 
-// We are going to ceate a stack navigation
+//we are going to create a stack navigation
 const Stack = createStackNavigator();
 
 export default function App() {
