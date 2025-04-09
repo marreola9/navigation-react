@@ -9,7 +9,7 @@ export default function Films() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetchData("Films")
+    fetchData("films")
       .then(setFilms)
       .catch(setError)
       .finally(() => setLoading(false));
@@ -23,7 +23,7 @@ export default function Films() {
       <FlatList
         data={Films}
         keyExtractor={(item) => item.uid}
-        renderItem={({ item }) => <Text style={styles.item}>{item.name}</Text>}
+        renderItem={({ item }) => <Text style={styles.item}>{item.title}</Text>}
       />
     </View>
   );
